@@ -43,6 +43,11 @@
   --font-weight-semibold: 600
   --font-weight-bold: 700;
 
+  /* Spacing */
+  --gap-sm: 16px;
+  --gap-md: 24px;
+
+
   /* Default */
   font-family: var(--font-base);
 }
