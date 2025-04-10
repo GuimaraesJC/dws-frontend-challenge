@@ -1,0 +1,48 @@
+:root {
+  /* Reset */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  --color-neutral-lightest: #f0f0f2;
+  --color-neutral-extra-light: #e0e2e6;
+  --color-neutral-light: #c0c2c8;
+  --color-neutral-medium: #9ea0a5;
+  --color-neutral-dark: #f7f815;
+  --color-neutral-extra-dark: #5e5f63;
+  --color-neutral-darkest: #202122;
+
+  --color-primary-light: #0b0e3a;
+  --color-primary-medium: #060725;
+  --color-primary-dark: #020318;
+
+  --color-secondary-light: #ef4c84;
+  --color-secondary-medium: #d31450;
+  --color-secondary-dark: #8c1038;
+
+  --color-accent-light: #00bfc1;
+  --color-accent-medium: #009598;
+  --color-accent-dark: #006c6e;
+
+  /* Typography */
+  --font-base: "Open Sans", sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.25rem;
+  --font-size-xxl: 3.5rem;
+
+  --line-height-sm: 1.3;
+  --line-height-md: 1.5;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600
+  --font-weight-bold: 700;
+
+  /* Default */
+  font-family: var(--font-base);
+}
