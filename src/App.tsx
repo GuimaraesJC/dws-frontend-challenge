@@ -1,14 +1,9 @@
-import './App.css'
-
-import Header from './components/Header'
+import Router from './routes/Router'
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <h1>DWS</h1>
-    </>
+    <Router />
   )
 }
 
