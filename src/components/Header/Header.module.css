@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  fill: var(--color-neutral-darkest);
+}
+
+.input {
+  display: none;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 8px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-primary-light);
+}
+
+.icon {
+  /* Width and height deliberately changed for better UX */
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .input {
+    display: block;
+    height: 56px;
+    width: 40rem;
+    border-radius: 100vh;
+    border: 1px solid var(--color-neutral-extra-light);
+    padding: 8px 56px 8px 16px;
+    background-color: none;
+    position: relative;
+    font-size: var(--font-size-lg);
+    color: var(--color-neutral-extra-dark);
+  
+    &::placeholder {
+      color: var(--color-neutral-medium);
+    }
+  
+    &:is(:hover, :focus) {
+      border-color: var(--color-accent-medium);
+    }
+  }
+}

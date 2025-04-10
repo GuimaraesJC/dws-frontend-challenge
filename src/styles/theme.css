@@ -10,7 +10,7 @@
   --color-neutral-extra-light: #e0e2e6;
   --color-neutral-light: #c0c2c8;
   --color-neutral-medium: #9ea0a5;
-  --color-neutral-dark: #f7f815;
+  --color-neutral-dark: #7f8185;
   --color-neutral-extra-dark: #5e5f63;
   --color-neutral-darkest: #202122;
 
@@ -50,4 +50,5 @@
 
   /* Default */
   font-family: var(--font-base);
+  line-height: var(--line-height-md);
 }
