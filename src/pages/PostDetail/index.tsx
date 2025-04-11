@@ -1,11 +1,12 @@
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 
+import Button from '../../components/Button'
 import LatestArticles from '../../components/LatestArticles'
 
 import { usePost } from '../../hooks/usePosts'
+import { formatDate } from '../../utils/formatDate'
 
 import styles from './PostDetail.module.css'
-import { formatDate } from '../../utils/formatDate'
 
 
 function PostDetail() {
@@ -15,7 +16,9 @@ function PostDetail() {
   return (
     <main className={styles.container}>
       <div className={styles.returnButtonContainer}>
-
+        <Link to='/'>
+          <Button action='return' variant='secondary' label='Back' />
+        </Link>
       </div>
       <article className={styles.article}>
         <div>
