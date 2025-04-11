@@ -1,6 +1,6 @@
-import { Post } from '../../types'
-import { formatDate } from '../../utils/formatDate'
 import Tag from '../Tag'
+import { formatDate } from '../../utils/formatDate'
+import { Post } from '../../types'
 import styles from './PostItem.module.css'
 
 interface PostItemProps {

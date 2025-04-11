@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router'
 import PostItem from '../../components/PostItem'
 import Sidebar from '../../components/Sidebar'
+import SortByFilter from '../../components/SortByFilter'
 
 import { usePosts } from '../../hooks/usePosts'
 import { useBlogStore } from '../../store/blogStore'
@@ -20,16 +21,22 @@ function PostList() {
   }, [posts, setPosts])
 
   return (
-    <section className={styles.home}>
-      <Sidebar />
-      <main className={styles.main}>
-        {posts?.map(post => (
-          <Link key={post.id} to={`/post/${post.id}`}>
-            <PostItem post={post} />
-          </Link>
-        ))}
-      </main>
-    </section>
+    <>
+      <div className={styles.header}>
+        <h1 className={styles.blogName}>DWS Blog</h1>
+        <SortByFilter />
+      </div>
+      <section className={styles.home}>
+        <Sidebar />
+        <main className={styles.main}>
+          {posts?.map(post => (
+            <Link key={post.id} to={`/post/${post.id}`}>
+              <PostItem post={post} />
+            </Link>
+          ))}
+        </main>
+      </section>
+    </>
   )
 }
 

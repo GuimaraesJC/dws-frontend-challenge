@@ -4,6 +4,7 @@
   justify-content: space-between;
   gap: 0.5rem;
   color: var(--color-primary-light);
+  margin-right: 3rem;
 }
 
 .sortLabel{
@@ -21,9 +22,19 @@
   margin-left: 0.25rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .container {
+    margin-right: 1.5rem;
+  }
+
   .sortLabel {
     display: block;
     font-weight: var(--font-weight-semibold);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin-right: 3rem;
   }
 }
