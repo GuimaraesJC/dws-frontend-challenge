@@ -5,6 +5,7 @@
   border-radius: 1rem;
   transition: box-shadow 0.3s ease-in-out;
 
+
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -46,4 +47,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.footer {
+  padding: 0 1rem 1.5rem;
 }

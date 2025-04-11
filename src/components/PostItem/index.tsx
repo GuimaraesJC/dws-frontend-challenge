@@ -20,7 +20,7 @@ function PostItem({ post: { author, content, title, thumbnail_url, createdAt, ca
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.postDescription}>{content}</p>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         {categories.map(category => (
           <Tag key={category.id} content={category.name} />
         ))}

@@ -1,4 +1,7 @@
 import { useParams } from 'react-router'
+
+import LatestArticles from '../../components/LatestArticles'
+
 import { usePost } from '../../hooks/usePosts'
 
 import styles from './PostDetail.module.css'
@@ -33,6 +36,11 @@ function PostDetail() {
 
         <p className={styles.content}>{post?.content}</p>
       </article>
+
+      <footer className={styles.latestArticles}>
+        <span className={styles.latestLabel}>Latest Articles</span>
+        <LatestArticles />
+      </footer>
     </main>
   )
 }
