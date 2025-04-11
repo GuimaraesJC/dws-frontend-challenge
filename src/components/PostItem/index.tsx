@@ -11,7 +11,6 @@ function PostItem({ post: { author, content, title, thumbnail_url, createdAt, ca
   return (
     <article className={styles.container}>
       <img className={styles.thumbnail} src={thumbnail_url} alt="Description of thumbnail for better UX" />
-
       <main className={styles.main}>
         <div className={styles.metadata}>
           <span className={styles.createdAt}>{formatDate(createdAt)}</span>
