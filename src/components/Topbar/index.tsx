@@ -1,9 +1,8 @@
-import styles from './Header.module.css'
-
+import styles from './Topbar.module.css'
 
 import SearchIcon from '../../assets/icons/search.svg?react'
 
-function Header() {
+function Topbar() {
 	return (
 		<header className={styles.container}>
       <h1>DWS</h1>
@@ -15,4 +14,4 @@ function Header() {
 	)
 }
  
-export default Header
+export default Topbar
