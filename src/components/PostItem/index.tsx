@@ -16,8 +16,10 @@ function PostItem({ post: { author, content, title, thumbnail_url, createdAt, ca
           <span className={styles.createdAt}>{formatDate(createdAt)}</span>
           <span>{author.name}</span>
         </div>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.postDescription}>{content}</p>
+        <p className={styles.postContent}>
+          <h3 className={styles.postTitle}>{title}</h3>
+          <p className={styles.postDescription}>{content}</p>
+        </p>
       </main>
       <footer className={styles.footer}>
         {categories.map(category => (
