@@ -1,0 +1,55 @@
+.container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.return {
+  grid-column: 1 / span 2;
+}
+
+.article {
+  grid-column: 3 / span 8;
+}
+
+.title {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-sm);
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.metadata {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--color-neutral-darkest);
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+}
+
+.authorName {
+  font-weight: var(--font-weight-semibold);
+}
+
+.createdAt {
+  color: var(--color-neutral-extra-dark);
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+}
+
+.content {
+  white-space: pre-wrap;
+  color: var(--color-primary-dark);
+  border-bottom: 1px solid var(--color-neutral-light);
+  padding-bottom: 2rem;
+}

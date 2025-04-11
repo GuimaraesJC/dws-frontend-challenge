@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router'
 import PostItem from '../../components/PostItem'
 import Sidebar from '../../components/Sidebar'
 import { usePosts } from '../../hooks/usePosts'
@@ -14,7 +15,9 @@ function PostList() {
       <Sidebar />
       <main className={styles.main}>
         {posts?.map(post => (
-          <PostItem key={post.id} post={post} />
+          <Link key={post.id} to={`/post/${post.id}`}>
+            <PostItem post={post} />
+          </Link>
         ))}
       </main>
     </section>
