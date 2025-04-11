@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--color-primary-light);
+}
+
+.sortLabel{
+  display: none;
+}
+
+.sortDirection {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .sortLabel {
+    display: block;
+    font-weight: var(--font-weight-semibold);
+  }
+}

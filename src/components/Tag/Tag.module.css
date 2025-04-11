@@ -1,0 +1,12 @@
+.container {
+  height: 2rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-primary-light);
+  background-color: var(--color-neutral-extra-light);
+  border-radius: 1rem;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+}
