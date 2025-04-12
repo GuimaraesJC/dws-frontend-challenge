@@ -26,6 +26,9 @@
   --color-accent-medium: #009598;
   --color-accent-dark: #006c6e;
 
+  /* Color variants */
+  --color-secondary-medium-rgba: rgb(211,20, 80, 0.05);
+
   /* Typography */
   --font-base: "Open Sans", sans-serif;
 

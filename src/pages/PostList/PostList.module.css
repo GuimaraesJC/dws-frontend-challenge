@@ -2,6 +2,13 @@
   display: none;
 }
 
+.mobileFilters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -35,6 +42,10 @@
     max-width: 90rem;
     margin: 0 auto;
     padding: var(--gap-sm);
+  }
+
+  .mobileFilters {
+    display: none;
   }
 
   .home {
