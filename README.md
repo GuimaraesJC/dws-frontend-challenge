@@ -51,6 +51,8 @@ There are also opportunities to improve the positioning and behavior of certain 
 
 For the sort filter specifically, one possible enhancement would be to create a custom hook that detects screen size and dynamically shortens the text (e.g., "Newest first" / "Oldest first") to avoid line breaks on very small screens.
 
+There's also room for improvement in the dropdown behavior. One enhancement would be to add event listeners that detect clicks outside the dropdown, allowing it to close automatically.
+
 From a technical perspective, using frameworks like Next.js, Gatsby, or even React Router v7 would allow for Static Site Generation, significantly improving SEO and overall performance.
 
 Unit tests could also be added for key components such as the filter logic and the filtered post list. These tests were not implemented initially due to time constraints.
