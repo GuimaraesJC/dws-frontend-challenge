@@ -57,6 +57,7 @@
 
 .latestArticles {
   margin-top: 2rem;
+  margin: 0 auto;
 }
 
 .latestLabel {
@@ -64,16 +65,18 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-primary-dark);
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 @media (min-width: 768px) {
   .container {
+    margin: 0 auto;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding: 0;
     padding-bottom: 2rem;
+    max-width: 90rem;
   }
 
   .returnButtonContainer {
