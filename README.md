@@ -45,8 +45,14 @@ Handles navigation for non-existent pages in the router, displaying a user-frien
 
 ## Room for improvement
 
-Due to time constraints, I wasn’t able to fully implement the post filtering feature. However, I began setting it up within the global store, and it remains a work in progress that can be further discussed in the next stage of the process.
+Due to time constraints, I wasn’t able to fully implement the post filtering feature. However, the initial setup has been started using the global store, and it remains a work in progress that can be further discussed in the next stage of the process. Additionally, the search input in the top bar is currently non-functional, but it is planned as part of the filtering feature and can also be integrated via the global store.
 
-There is also room for improvement in the positioning of certain UI elements, for example, the sort filter on the main page's post list, as well as the sizing of the dropdown filters when multiple options are selected.
+There are also opportunities to improve the positioning and behavior of certain UI elements. For example, the sort filter on the main page’s post list could benefit from layout adjustments, and the dropdown filters could have better sizing behavior when multiple options are selected.
 
-From a technical perspective, one possible enhancement would be to adopt frameworks such as Next.js, Gatsby, or even React Router v7 to enable Static Site Generation. This would provide a more SEO-friendly setup and improve performance.
+For the sort filter specifically, one possible enhancement would be to create a custom hook that detects screen size and dynamically shortens the text (e.g., "Newest first" / "Oldest first") to avoid line breaks on very small screens.
+
+From a technical perspective, using frameworks like Next.js, Gatsby, or even React Router v7 would allow for Static Site Generation, significantly improving SEO and overall performance.
+
+Unit tests could also be added for key components such as the filter logic and the filtered post list. These tests were not implemented initially due to time constraints.
+
+Finally, accessibility improvements, such as adding ARIA attributes and supporting full keyboard navigation, would complement the use of semantic HTML and contribute to a more inclusive and accessible user experience.
