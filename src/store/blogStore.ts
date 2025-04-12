@@ -37,7 +37,7 @@ export const useBlogStore = create<BlogStoreState>()(
 
       selectedAuthors: [],
       selectedCategories: [],
-      sortBy: 'asc',
+      sortBy: 'desc',
 
       setPosts: (posts) => set({ posts }),
       setAuthors: (authors) => set({ authors }),
