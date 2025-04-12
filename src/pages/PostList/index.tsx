@@ -83,6 +83,7 @@ function PostList() {
 
         </section>
         <main className={styles.main}>
+          {/* Next improvement would be to use the list of filtered posts if available on the store */}
           {posts?.map(post => (
             <Link key={post.id} to={`/post/${post.id}`}>
               <PostItem post={post} />

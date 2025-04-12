@@ -15,6 +15,8 @@ type BlogStoreState = {
   selectedCategories: Category[]
   sortBy: SortBy
 
+  filteredPosts: Post[]
+
   // Actions
   setPosts: (posts: Post[]) => void
   setAuthors: (authors: Author[]) => void
@@ -24,7 +26,9 @@ type BlogStoreState = {
   setSelectedCategories: (category: Category) => void
   setSortBy: (sortBy: SortBy) => void
 
-  resetSelectedAuthors : () => void
+  setFilteredPosts: () => void
+  
+  resetSelectedAuthors: () => void
   resetSelectedCategories: () => void
 }
 
@@ -38,6 +42,8 @@ export const useBlogStore = create<BlogStoreState>()(
       selectedAuthors: [],
       selectedCategories: [],
       sortBy: 'desc',
+
+      filteredPosts: [],
 
       setPosts: (posts) => set({ posts }),
       setAuthors: (authors) => set({ authors }),
@@ -61,6 +67,26 @@ export const useBlogStore = create<BlogStoreState>()(
         }
       }),
       setSortBy: (sortBy) => set({ sortBy }),
+
+      setFilteredPosts: () => set((state) => {
+        const { posts, selectedAuthors, selectedCategories } = state
+      
+        const filtered = posts.filter((post) => {
+          const matchesAuthor = selectedAuthors.length === 0
+            || selectedAuthors.some((author) => author.id === post.author.id)
+      
+          const matchesCategory = selectedCategories.length === 0
+            || selectedCategories.some((category) =>
+              post.categories.includes(category)
+            )
+      
+          return matchesAuthor && matchesCategory
+        })
+
+        // Sort logic would go here
+      
+        return { filteredPosts: filtered }
+      }),
 
       resetSelectedAuthors: () => set({ selectedAuthors: [] }),
       resetSelectedCategories: () => set({ selectedCategories: [] }),
