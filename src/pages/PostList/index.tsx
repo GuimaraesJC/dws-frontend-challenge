@@ -23,13 +23,13 @@ function PostList() {
   const setAuthors = useBlogStore(state => state.setAuthors)
   const setCategories = useBlogStore(state => state.setCategories)
 
-  const { 
-    setSelectedCategories, 
-    setSelectedAuthors, 
+  const {
+    setSelectedCategories,
+    setSelectedAuthors,
     resetSelectedCategories,
     resetSelectedAuthors,
-    selectedCategories,  
-    selectedAuthors, 
+    selectedCategories,
+    selectedAuthors,
   } = useBlogStore()
 
   const onSelectCategory = (category: Category) => {
@@ -78,6 +78,9 @@ function PostList() {
             onClearFn={resetSelectedAuthors}
             selectedOptions={selectedAuthors}
           />
+
+          <SortByFilter />
+
         </section>
         <main className={styles.main}>
           {posts?.map(post => (
