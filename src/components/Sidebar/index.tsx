@@ -1,19 +1,17 @@
-import { useCategories } from '../../hooks/useCategories'
-import { useAuthors } from '../../hooks/useAuthors'
+import { useBlogStore } from '../../store/blogStore'
 
 import Button from '../Button'
-import FilterIcon from '../../assets/icons/filter.svg?react'
+import { GiSettingsKnobs } from 'react-icons/gi'
 
 import styles from './Sidebar.module.css'
 
 function Sidebar() {
-  const { data: categories } = useCategories()
-  const { data: authors } = useAuthors()
+  const { authors, categories } = useBlogStore()
 
   return (
     <aside className={styles.container}>
       <header className={styles.header}>
-        <FilterIcon className={styles.icon} />
+      <GiSettingsKnobs className={styles.icon} />
         <h2 className={styles.title}>Filters</h2>
       </header>
 

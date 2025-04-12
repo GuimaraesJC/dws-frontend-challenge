@@ -1,5 +1,4 @@
-import SortIcon from '../../assets/icons/sort.svg?react'
-
+import { BiSortAlt2 } from 'react-icons/bi'
 import styles from './SortByFilter.module.css'
 
 function SortByFilter() {
@@ -8,7 +7,7 @@ function SortByFilter() {
       <p className={styles.sortLabel}>Sort by:</p>
       <span className={styles.sortDirection}>
         Newest first
-        <SortIcon className={styles.icon} />
+        <BiSortAlt2 className={styles.icon} />
       </span>
     </div>
   )
