@@ -20,7 +20,7 @@ function Dropdown({ label, options, onSelectFn, onClearFn, selectedOptions }: Dr
   const handleShowSelectedOptions = (selectedOptions: (Author | Category)[]) => {
     const selected = selectedOptions.map(option => option.name).join(', ')
 
-    return selected.length > 20 ? selected.slice(0, 20) + '...' : selected
+    return selected.length > 10 ? selected.slice(0, 10) + '...' : selected
   }
 
   return (
